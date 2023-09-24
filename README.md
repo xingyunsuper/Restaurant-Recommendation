@@ -14,12 +14,13 @@ This is a project affiliated with the University of Chicago's Applied Data Scien
 - Utilized the Kaggle API to directly download the 5GB Yelp JSON dataset into Google Cloud Platform (GCP) buckets. Additionally, a data sampling step was conducted to facilitate testing and code validation on a smaller dataset before utilizing extensive computational resources.
 
 ### 2)Exploratory Data Analysis
-- Relevant files: EDA.ipynb
+- Relevant file: EDA.ipynb
 - An in-depth exploratory data analysis was carried out using BigQuery and Spark SQL on the Yelp dataset. This analysis provided valuable insights into various aspects, including business, reviews, users, and tips.
 
 ### 3)Sentiment Analysis Model 
 - Relevant files: SentimentAnalysis_SampleData.ipynb + SentimentAnalysis_FullData.ipynb
-- To develop a sentiment analysis model, multiple vectorization methods and classification algorithms were tested extensively on a sample dataset first. Once the optimal combination was determined, the model was executed on the full dataset. The sentiment analysis models using NLP pipelines and classification models to predict sentiment polarity in tip text data based on a trained dataset of 4.72M Yelp reviews. Following thorough model comparisons and hyperparameter tuning, the LinearSVC model delivered an accuracy rate of 0.8978.
+- To develop a sentiment analysis model, multiple vectorization methods and classification algorithms were tested extensively on a sample dataset first. Once the optimal combination was determined, the model was executed on the full dataset.
+- The sentiment analysis models using NLP pipelines and classification models to predict sentiment polarity in tip text data based on a trained dataset of 4.72M Yelp reviews. Following thorough model comparisons and hyperparameter tuning, the LinearSVC model delivered an optimal accuracy rate of 0.8978.
 
 ### 4)Recommender System
 - Relevant files: Rec_Sys.ipynb, Rec_Sys.html
