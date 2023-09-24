@@ -9,21 +9,13 @@ This is a project affiliated with the University of Chicago's Applied Data Scien
 
 The project involved the following key steps:
 
+- Data Download and Import (Data_KaggleAPI.ipynb + Data_Import.ipynb): Utilized the Kaggle API to directly download the 5GB Yelp JSON dataset into Google Cloud Platform (GCP) buckets. Additionally, a data sampling step was conducted to facilitate testing and code validation on a smaller dataset before utilizing extensive computational resources.
 
-some preparation process, including, first, Use Kaggle API to Download Yelp-dataset to GCP buckets and then import data and sample some data to first run the data. 
+- Exploratory Data Analysis (EDA.ipynb): An in-depth exploratory data analysis was carried out using BigQuery and Spark SQL on the Yelp dataset. This analysis provided valuable insights into various aspects, including business, reviews, users, and tips.
 
-Conducted exploratory data analysis (EDA) using BigQuery and Spark SQL on a substantial 5GB Yelp JSON dataset. This analysis yielded valuable insights spanning multiple dimensions, including business, reviews, users, and tips.
+- Sentiment Analysis Model (SentimentAnalysis_SampleData.ipynb + SentimentAnalysis_FullData.ipynb): To develop a sentiment analysis model, multiple vectorization methods and classification algorithms were tested extensively on a sample dataset first. Once the optimal combination was determined, the model was executed on the full dataset. The sentiment analysis models using NLP pipelines and classification models to predict sentiment polarity in tip text data based on a trained dataset of 4.72M Yelp reviews. Following thorough model comparisons and hyperparameter tuning, the LinearSVC model delivered an accuracy rate of 0.8978.
 
-Leveraged sentiment analysis through the utilization of Natural Language Processing (NLP) pipelines and classification models. These models were employed to predict sentiment polarity in tip text data, utilizing a trained dataset containing 4.72 million Yelp reviews. Notably, an accuracy rate of 0.8978 was achieved with the LinearSVC model following comprehensive model comparisons and hyperparameter tuning.
-
-Developed a Collaborative Filtering recommender system using PySpark ALS (Alternating Least Squares). After meticulous hyperparameter tuning, the system achieved an impressive Root Mean Square Error (RMSE) of 0.47. Furthermore, an evaluation was conducted to assess the alignment between the category word clouds of the top 10 recommendations and users' preferences based on their past visits, confirming positive validation alongside the RMSE assessment.
-
-
-
-- Aimed to develop PySpark-based machine leaning solutions on Google Cloud Platform (GCP), covering a sentiment analysis model to improve restaurant services by understanding unlabeled short reviews (tips) and a personalized recommender system, the system includes two separate algorithms to recommend top users for restaurants and top restaurants for users
-- Conducted exploratory data analysis (EDA) using BigQuery and Spark SQL on a 5GB yelp Json dataset, revealing valuable insights across business, reviews, users, and tips
-- Leveraged sentiment analysis using NLP pipelines and classification models to predict sentiment polarity in tip text data based on a trained dataset of 4.72M Yelp reviews. Achieved an accuracy of 0.8978 with LinearSVC after comparing various models and performing hyperparameter tuning
-- Bulit a Collaborative Filtering recommender system with PySpark ALS, achieving an RMSE of 0.47 after hyperparameter tuning. Evaluated alignment between Top 10 Recommendations' category word clouds and users' past visits preferences, affirming positive validation alongside RMSE assessment
+- Recommender System (Rec_Sys.ipynb + Rec_Sys.html): A Collaborative Filtering recommender system was developed using PySpark ALS. After hyperparameter tuning, the system achieved an impressive Root Mean Square Error (RMSE) of 0.47. Furthermore, an evaluation was conducted to assess the alignment between the category word clouds of the top 10 recommendations and users' preferences based on their past visits. This assessment confirmed positive validation alongside the RMSE assessment.
 
 This is a project by Yun Xing ([yxing3@uchicago.edu](mailto:yxing3@uchicago.edu)), Xiran Li ([xiranli16@uchicago.edu](mailto:xiranli16@uchicago.edu)), and Sam Ding ([zding1@uchicago.edu](mailto:zding1@uchicago.edu)). 
 Feel free to reach out to them if you have any questions about the project.
