@@ -18,7 +18,7 @@ This is a project affiliated with the University of Chicago's Applied Data Scien
 - An in-depth exploratory data analysis was carried out using BigQuery and Spark SQL on the Yelp dataset. This analysis provided valuable insights into various aspects, including business, reviews, users, and tips.
 
 ### 3)Sentiment Analysis Model 
-- Relevant files: SentimentAnalysis_SampleData.ipynb + SentimentAnalysis_FullData.ipynb
+- Relevant files: SentimentAnalysis_SampleData.ipynb, SentimentAnalysis_FullData.ipynb
 - To develop a sentiment analysis model, multiple vectorization methods and classification algorithms were tested extensively on a sample dataset first. Once the optimal combination was determined, the model was executed on the full dataset.
 - The sentiment analysis models using NLP pipelines and classification models to predict sentiment polarity in tip text data based on a trained dataset of 4.72M Yelp reviews. Following thorough model comparisons and hyperparameter tuning, the LinearSVC model delivered an optimal accuracy rate of 0.8978.
 
