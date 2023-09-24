@@ -2,11 +2,13 @@
 
 ![](Pres_first_page.png)
 
+## Overview
 This is a project affiliated with the University of Chicago's Applied Data Science Program. The objective was to create two PySpark-based machine learning solutions on Google Cloud Platform (GCP). These solutions are as follows:
 
 - Sentiment Analysis Model: This model was developed to improve restaurant services by extracting insights from unlabeled short reviews (tips). It focuses on analyzing sentiment within these reviews.
 - Personalized Recommender System: The second solution is a personalized recommender system, incorporating two distinct algorithms. One algorithm recommends top users for restaurants, while the other suggests top restaurants to users.
 
+## Project Structure
 The project involved the following key steps:
 
 - Data Download and Import (Data_KaggleAPI.ipynb + Data_Import.ipynb): Utilized the Kaggle API to directly download the 5GB Yelp JSON dataset into Google Cloud Platform (GCP) buckets. Additionally, a data sampling step was conducted to facilitate testing and code validation on a smaller dataset before utilizing extensive computational resources.
